@@ -7,26 +7,25 @@
                 </div>
             </div>
             <div class="list-content space">
-                <div class="list-item">
+                <div class="list-item" v-for="(item, key) in issuesList" :key="key">
                     <div class="list-item__content">
                         <div class="list-item__link">
                             <a href="">
-                                componentInstance is undefined with v-slot syntax on this.$slots[slots] VNodes
+                                {{item.title}}
                             </a>
-                            <a href="">
-                                <span class="tag">
-                                    bug
-                                </span>
+                            <a href="" v-for="(label, key) in item.labels" :key="key" class="tag"
+                               :style="{'background-color': '#' + label.color}">
+                                {{label.name}}
                             </a>
                         </div>
                         <div class="list-item__small-text">
-                            #10554 opened yesterday by petr001
+                            #{{item.number}} opened yesterday by {{authorName(item.user)}}
                         </div>
                     </div>
-                    <div class="list-item__comments">
+                    <div class="list-item__comments" v-if="item.comments > 0">
                         <div class="list-item__comments-icon"></div>
                         <div class="list-item__comments-count">
-                            12
+                            {{item.comments}}
                         </div>
                     </div>
                 </div>
@@ -50,14 +49,25 @@
         computed: {
             ...mapState('issues', [
                 'issues'
-            ])
+            ]),
+
+            // Список вопросов
+            issuesList() {
+                return this.issues.list
+            }
         },
         methods: {
             ...mapActions('issues', [
                 'loadIssuesList'
-            ])
+            ]),
+
+            // Автор вопроса
+            authorName(item) {
+                return item.login
+            }
         },
-        beforeMount () {
+        beforeMount() {
+            // Загрузка списка вопросов
             this.loadIssuesList()
         }
     }
