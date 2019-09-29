@@ -7,7 +7,7 @@
 
 <script>
     import PageHeader from './components/PageHeader.vue'
-    import PageContent from './components/PageContent.vue'
+    import PageContent from './components/PageContainer.vue'
 
     export default {
         name: 'app',
