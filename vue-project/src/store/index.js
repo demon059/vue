@@ -1,19 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import issues from './modules/issues'
 
 Vue.use(Vuex);
 
-const store = new Vuex.Store({
+// Load store modules dynamically.
+const requireContext = require.context('./modules', false, /.*\.js$/)
 
-    state: {},
-    getters : {},
-    mutations: {},
-    actions:{},
+const modules = requireContext.keys()
+    .map(file =>
+        [file.replace(/(^.\/)|(\.js$)/g, ''), requireContext(file)]
+    )
+    .reduce((modules, [name, module]) => {
+        if (module.namespaced === undefined) {
+            module.namespaced = true
+        }
 
-    modules : {
-        issues
-    }
+        return {...modules, [name]: module}
+    }, {})
+
+export default new Vuex.Store({
+    modules
 })
-
-export default store
