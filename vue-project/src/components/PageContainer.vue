@@ -14,8 +14,9 @@
                                     <span class="select-menu-title">Sort by</span>
                                 </div>
                                 <div class="list-menu-content">
-                                    <div class="list-menu-item" v-for="item in sortList"
+                                    <div class="list-menu-item" v-for="(item, index) in sortList"
                                          @click="selectSort({key: item.key})"
+                                         :key="index"
                                          :class="{active: item.key === issues.sort}">
                                         {{item.name}}
                                     </div>
