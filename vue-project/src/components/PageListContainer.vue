@@ -4,6 +4,24 @@
             <div class="list-count">
                 {{issues.itemsTotalCount}} Open
             </div>
+            <div class="list-actions">
+                <details class="list-menu">
+                    <summary>Sort</summary>
+                    <div class="list-menu-modal">
+                        <div class="list-menu-header">
+                            <span class="select-menu-title">Sort by</span>
+                        </div>
+                        <div class="list-menu-content">
+                            <div class="list-menu-item" v-for="(item, index) in sortList"
+                                 @click="selectSort({key: item.key})"
+                                 :key="index"
+                                 :class="{active: item.key === issues.sort}">
+                                {{item.name}}
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
         </div>
         <div class="list-content space" :class="{ loader: issues.listLoading }">
             <div class="list-item" v-for="(item, key) in issuesList" :key="key">
@@ -38,6 +56,40 @@
 
     export default {
         name: 'PageListContainer',
+        data () {
+            return {
+                sortList: [
+                    {
+                        name: 'Newest',
+                        key: 'created-desc'
+                    },
+                    {
+                        name: 'Oldest',
+                        key: 'created-asc'
+                    },
+                    {
+                        name: 'Most commented',
+                        key: 'comments-desc'
+                    },
+                    {
+                        name: 'Least updated',
+                        key: 'comments-asc'
+                    },
+                    {
+                        name: 'Recently updated',
+                        key: 'updated-desc'
+                    },
+                    {
+                        name: 'Least recently updated',
+                        key: 'updated-asc'
+                    },
+                    {
+                        name: 'Most reactions',
+                        key: 'reactions-smile-desc'
+                    }
+                ]
+            }
+        },
         computed: {
             ...mapState('issues', [
                 'issues'
@@ -50,17 +102,31 @@
         },
         methods: {
             ...mapActions('issues', [
-                'loadIssuesList'
+                'loadIssuesList',
+                'selectSort'
             ]),
 
             // Автор вопроса
             authorName(item) {
                 return item.login
+            },
+
+            closeDetails () {
+                let details = document.querySelectorAll('details')
+                details.forEach((detail) => {
+                    detail.removeAttribute('open')
+                })
             }
         },
-        beforeMount() {
+        beforeMount () {
             // Загрузка списка вопросов
             this.loadIssuesList()
+        },
+        mounted () {
+            window.addEventListener('click', this.closeDetails, false)
+        },
+        beforeDestroy () {
+            window.removeEventListener('click', this.closeDetails, false)
         }
     }
 </script>
