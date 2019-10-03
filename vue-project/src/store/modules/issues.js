@@ -37,7 +37,7 @@ const actions = {
         if (state.issues.sort.length > 0) {
             url += url + sort
         }
-        return new Promise((resolve) => {
+        return new Promise(() => {
             commit('issuesListLoading', true)
             axios.get(url)
                 .then(xhr => {

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec50fb40-fff3-423c-a2d1-cb7c3a191cff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-project/src/assets/images/chevron-left-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-project/src/assets/images/chevron-right-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-project/test/PageListContainer.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ec50fb40-fff3-423c-a2d1-cb7c3a191cff" name="Default" comment="Финал. Версия 0.1">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demon059.github.io.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-project/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/assets/sass/base/loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/assets/sass/base/loader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageContainer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageHeader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/components/PageContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/components/PageContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/components/PageHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/components/PageHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-project/src/components/PagePagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/components/PagePagination.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-project/src/store/modules/issues.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project/src/store/modules/issues.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vue-project/node_modules/" />
@@ -31,17 +25,60 @@
       <file leaf-file-name="PageContainer.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageContainer.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="322">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageListContainer.spec.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue-project/test/PageListContainer.spec.js">
+      <file leaf-file-name="PagePagination.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-project/src/components/PagePagination.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="937">
+              <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+              <folding>
+                <element signature="n#div#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageListContainer.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+              <folding>
+                <element signature="n#div#0;n#template#0;n#!!top" />
+                <element signature="e#2326#3244#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-project/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issues.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-project/src/store/modules/issues.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="44" column="52" lean-forward="true" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-project/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="958">
+              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -73,6 +110,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="30834e3762cbd2c4112fd96bb6b1f729985d4008" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -95,14 +137,14 @@
         <option value="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageHeader.scss" />
         <option value="$PROJECT_DIR$/vue-project/src/assets/sass/components/PageContainer.scss" />
         <option value="$PROJECT_DIR$/vue-project/src/assets/sass/base/loader.scss" />
-        <option value="$PROJECT_DIR$/vue-project/.gitignore" />
         <option value="$PROJECT_DIR$/vue-project/package.json" />
         <option value="$PROJECT_DIR$/vue-project/src/store/index.js" />
-        <option value="$PROJECT_DIR$/vue-project/src/components/PagePagination.vue" />
-        <option value="$PROJECT_DIR$/vue-project/src/components/PageContainer.vue" />
-        <option value="$PROJECT_DIR$/vue-project/src/store/modules/issues.js" />
-        <option value="$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue" />
         <option value="$PROJECT_DIR$/vue-project/test/PageListContainer.spec.js" />
+        <option value="$PROJECT_DIR$/vue-project/src/components/PageContainer.vue" />
+        <option value="$PROJECT_DIR$/vue-project/src/components/PagePagination.vue" />
+        <option value="$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue" />
+        <option value="$PROJECT_DIR$/vue-project/.gitignore" />
+        <option value="$PROJECT_DIR$/vue-project/src/store/modules/issues.js" />
       </list>
     </option>
   </component>
@@ -111,6 +153,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vue-project/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -151,7 +196,7 @@
               <item name="demon059.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="vue-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="demon059.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -167,12 +212,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demon059.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demon059.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-project" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,16 +231,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\demon059.github.io\vue-project\test" />
-      <recent name="D:\work\demon059.github.io\vue-project\src\components" />
-      <recent name="D:\work\demon059.github.io\vue-project\src\store\modules" />
-      <recent name="D:\work\demon059.github.io\vue-project\src\assets\sass\components" />
-      <recent name="D:\work\demon059.github.io\vue-project\src\assets\sass\base" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\demon059.github.io\vue-project\src\store" />
       <recent name="D:\work\demon059.github.io\vue-project\src\assets\sass" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\demon059.github.io\vue-project\src\components" />
+      <recent name="D:\work\demon059.github.io\vue-project\test" />
+      <recent name="D:\work\demon059.github.io\vue-project\src\store\modules" />
+      <recent name="D:\work\demon059.github.io\vue-project\src\assets\sass\components" />
+      <recent name="D:\work\demon059.github.io\vue-project\src\assets\sass\base" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,7 +325,7 @@
       <workItem from="1569509716558" duration="7097000" />
       <workItem from="1569763256671" duration="742000" />
       <workItem from="1570120239306" duration="4405000" />
-      <workItem from="1570128360088" duration="319000" />
+      <workItem from="1570128360088" duration="3151000" />
     </task>
     <task id="LOCAL-00001" summary="Написание модуля issue.js &#10;&#10;Получение списка открытых вопросов из &#10;https://github.com/vuejs/vue/issues">
       <created>1569817002497</created>
@@ -317,7 +356,28 @@
       <option name="project" value="LOCAL" />
       <updated>1570125291122</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge branch 'master' of https://github.com/demon059/demon059.github.io&#10;&#10;# Conflicts:&#10;#&#9;vue-project/package-lock.json&#10;#&#9;vue-project/src/components/PageContainer.vue">
+      <created>1570128832788</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570128832788</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://github.com/demon059/demon059.github.io&#10;&#10;# Conflicts:&#10;#&#9;vue-project/package-lock.json&#10;#&#9;vue-project/src/components/PageContainer.vue">
+      <created>1570130020023</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570130020023</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Финал.Версия 0.1 без тестов">
+      <created>1570131013802</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570131013802</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -338,21 +398,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37307000" />
+    <option name="totallyTimeSpent" value="40139000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.253125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.253125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32983193" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32983193" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23109244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20693277" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20693277" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -378,7 +439,10 @@
     <MESSAGE value="add index.js" />
     <MESSAGE value="Разделил на более мелкие компоненты" />
     <MESSAGE value="commit workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit workspace" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/demon059/demon059.github.io&#10;&#10;# Conflicts:&#10;#&#9;vue-project/package-lock.json&#10;#&#9;vue-project/src/components/PageContainer.vue" />
+    <MESSAGE value="Финал.Версия 0.1 без тестов" />
+    <MESSAGE value="Финал. Версия 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Финал. Версия 0.1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue-project/src/assets/sass/base/base.scss">
@@ -432,6 +496,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -474,6 +541,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,6 +620,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#116#168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -616,59 +689,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-project/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageContainer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PagePagination.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-project/src/store/modules/issues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,8 +718,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-project/test/PageListContainer.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="230">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="958">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/src/store/modules/issues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="44" column="52" lean-forward="true" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageContainer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PagePagination.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-project/src/components/PageListContainer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="n#div#0;n#template#0;n#!!top" />
+            <element signature="e#2326#3244#0" />
+          </folding>
         </state>
       </provider>
     </entry>
