@@ -1,20 +1,11 @@
-import { shallowMount } from '@vue/test-utils'
-import List from '@/components/List.vue'
+import {shallowMount} from '@vue/test-utils'
+import PageHeader from '../src/components/PageHeader'
 
-describe('List.vue', () => {
-  it('renders li for each item in props.items', () => {
-    const items = ['1', '2']
-    const wrapper = shallowMount(List, {
-      propsData: { items }
+describe('PageListContainer.vue', () => {
+    it('Содержит ли header текст LIST ISSUES ', () => {
+        const text = 'LIST ISSUES'
+        const wrapper = shallowMount(PageHeader)
+        expect(wrapper.text()).toBe(text)
+        // console.log(wrapper)
     })
-    expect(wrapper.findAll('li')).toHaveLength(items.length)
-  })
-
-  it('matches snapshot', () => {
-    const items = ['item 1', 'item 2']
-    const wrapper = shallowMount(List, {
-      propsData: { items }
-    })
-    expect(wrapper.html()).toMatchSnapshot()
-  })
 })

@@ -1,9 +1,9 @@
 <template>
     <div class="page-pagination">
-        <button class="page-pagination__btn prev disabled"
+        <button class="page-pagination__btn prev desktop"
                 @click="goPrev"
                 :class="{ disabled: this.currentPage === 1 || this.pagesCount === 0 }">
-            Передыдущая
+            <img src="@/assets/images/chevron-left-solid.svg" alt="">
         </button>
         <ul class="page-pagination__list">
             <li v-for="(page, index) in pages" :class=page.class :key="index"
@@ -11,11 +11,23 @@
                 {{ page.label }}
             </li>
         </ul>
-        <button class="page-pagination__btn next"
+        <button class="page-pagination__btn next desktop"
                 @click="goNext"
                 :class="{ disabled: this.currentPage === this.pagesCount || this.pagesCount === 0 }">
-            Следующая
+            <img src="@/assets/images/chevron-right-solid.svg" alt="">
         </button>
+        <div class="page-pagination__btns mobile">
+            <button class="page-pagination__btn prev"
+                    @click="goPrev"
+                    :class="{ disabled: this.currentPage === 1 || this.pagesCount === 0 }">
+                <img src="@/assets/images/chevron-left-solid.svg" alt="">
+            </button>
+            <button class="page-pagination__btn next"
+                    @click="goNext"
+                    :class="{ disabled: this.currentPage === this.pagesCount || this.pagesCount === 0 }">
+                <img src="@/assets/images/chevron-right-solid.svg" alt="">
+            </button>
+        </div>
     </div>
 </template>
 

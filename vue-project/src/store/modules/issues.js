@@ -55,15 +55,7 @@ const actions = {
     },
     'selectSort': ({commit, dispatch}, {key}) => {
         commit('issuesCurrentSort', {key})
-        return dispatch('loadIssuesList')
-    },
-    'loadLabelsList': ({commit, state}) => {
-        return new Promise((resolve) => {
-            axios.get('https://api.github.com/repos/vuejs/vue/labels')
-                .then(xhr => {
-                    console.log(xhr)
-                })
-        })
+        return dispatch('issuesGoPage', {pageIndex: 1})
     }
 }
 
