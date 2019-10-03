@@ -7,7 +7,8 @@ const state = () => {
             page: 1,
             perPage: 30,
             itemsTotalCount: 0,
-            listLoading: true
+            listLoading: true,
+            sort: ''
         }
     }
 }
@@ -17,6 +18,9 @@ const mutations = {
     },
     'issuesCurrentPage': (state, {pageIndex}) => {
         state.issues.page = pageIndex
+    },
+    'issuesCurrentSort': (state, {key}) => {
+        state.issues.sort = key
     },
     'issuesItemsTotalCount': (state, {count}) => {
         state.issues.itemsTotalCount = count
@@ -28,16 +32,20 @@ const mutations = {
 const actions = {
     'loadIssuesList': ({commit, state}) => {
         let page = state.issues.page
+        let sort = `+sort:${state.issues.sort}`
+        let url = `https://api.github.com/search/issues?page=${page}&q=repo:vuejs/vue+type:issue+state:open`
+        if (state.issues.sort.length > 0) {
+            url += url + sort
+        }
         return new Promise((resolve) => {
             commit('issuesListLoading', true)
-            axios.get(`https://api.github.com/search/issues?page=${page}&q=repo:vuejs/vue+type:issue+state:open`)
+            axios.get(url)
                 .then(xhr => {
                     let list = xhr.data.items
                     let count = xhr.data.total_count
                     commit('issuesList', {list})
                     commit('issuesItemsTotalCount', {count})
                     commit('issuesListLoading', false)
-                    resolve(xhr)
                 })
         })
     },
@@ -45,6 +53,18 @@ const actions = {
         commit('issuesCurrentPage', {pageIndex})
         return dispatch('loadIssuesList')
     },
+    'selectSort': ({commit, dispatch}, {key}) => {
+        commit('issuesCurrentSort', {key})
+        return dispatch('loadIssuesList')
+    },
+    'loadLabelsList': ({commit, state}) => {
+        return new Promise((resolve) => {
+            axios.get('https://api.github.com/repos/vuejs/vue/labels')
+                .then(xhr => {
+                    console.log(xhr)
+                })
+        })
+    }
 }
 
 export default {
