@@ -1,6 +1,6 @@
 <template>
     <div class="list-layout">
-        <div class="list-header space">
+        <header class="list-header space">
             <div class="list-count">
                 {{issues.itemsTotalCount}} Open
             </div>
@@ -22,21 +22,21 @@
                     </div>
                 </details>
             </div>
-        </div>
-        <div class="list-content space" :class="{ loader: issues.listLoading }">
-            <div class="list-item" v-for="(item, key) in issuesList" :key="key">
+        </header>
+        <ul class="list-content space" :class="{ loader: issues.listLoading }">
+            <li class="list-item" v-for="(item, key) in issuesList" :key="key">
                 <div class="list-item__content">
                     <div class="list-item__link">
-                        <a href="">
+                        <a href="#" class="list-item__link-title">
                             {{item.title}}
                         </a>
-                        <a href="" v-for="(label, key) in item.labels" :key="key" class="tag"
-                           :style="{'background-color': '#' + label.color}">
+                        <a href="#" v-for="(label, key) in item.labels" :key="key" class="tag"
+                           :style="{'background-color': '#' + label.color, 'color': '#' + getContrastYIQ(label.color)}">
                             {{label.name}}
                         </a>
                     </div>
                     <div class="list-item__small-text">
-                        #{{item.number}} opened yesterday by {{authorName(item.user)}}
+                        #{{item.number}} opened {{date(item.created_at)}} by {{authorName(item.user)}}
                     </div>
                 </div>
                 <div class="list-item__comments" v-if="item.comments > 0">
@@ -45,8 +45,8 @@
                         {{item.comments}}
                     </div>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -56,7 +56,7 @@
 
     export default {
         name: 'PageListContainer',
-        data () {
+        data() {
             return {
                 sortList: [
                     {
@@ -111,21 +111,53 @@
                 return item.login
             },
 
-            closeDetails () {
+            closeDetails() {
                 let details = document.querySelectorAll('details')
                 details.forEach((detail) => {
                     detail.removeAttribute('open')
                 })
+            },
+            date(date) {
+                let currentDate = new Date()
+                let pastDate = new Date(date)
+                let currentYear = currentDate.getFullYear()
+                let yearCreatedIssue = pastDate.getFullYear()
+                let timeDiff = Math.abs(currentDate.getTime() - pastDate.getTime())
+                let amountDay = Math.floor(timeDiff / (1000 * 3600 * 24))
+                let day = pastDate.toLocaleString('en-US', {day: 'numeric'})
+                let month = pastDate.toLocaleString('en-US', {month: 'short'})
+                let year = pastDate.toLocaleString('en-US', {year: 'numeric'})
+
+                if (amountDay === 0) {
+                    return ' today'
+                }
+                if (amountDay === 1) {
+                    return ' yesterday'
+                }
+                if (amountDay > 1 && amountDay <= 31) {
+                    return amountDay + ' days ago'
+                }
+                if (amountDay > 31 && yearCreatedIssue === currentYear) {
+                    return 'on ' + day + ' ' + month
+                }
+                return 'on ' + day + ' ' + month + ' ' + year
+            },
+            getContrastYIQ(hexcolor) {
+                let r = parseInt(hexcolor.substr(0, 2), 16);
+                let g = parseInt(hexcolor.substr(2, 2), 16);
+                let b = parseInt(hexcolor.substr(4, 2), 16);
+                let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+                return (yiq >= 128) ? '000' : 'fff';
             }
         },
-        beforeMount () {
+        beforeMount() {
             // Загрузка списка вопросов
             this.loadIssuesList()
         },
-        mounted () {
+        mounted() {
             window.addEventListener('click', this.closeDetails, false)
         },
-        beforeDestroy () {
+        beforeDestroy() {
             window.removeEventListener('click', this.closeDetails, false)
         }
     }

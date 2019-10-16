@@ -1,10 +1,10 @@
 <template>
-    <div class="page-container">
+    <section class="page-container">
         <div class="page-content">
             <page-list-container/>
         </div>
         <page-pagination/>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -14,6 +14,8 @@ import issues from '@/store/modules/issues'
 import PageListContainer from './PageListContainer'
 import PagePagination from './PagePagination'
 
+import '@/assets/sass/components/PageContainer.scss'
+
 store.registerModule('issues', {...issues})
 
 export default {
@@ -21,5 +23,3 @@ export default {
     components: {PagePagination, PageListContainer}
 }
 </script>
-
-<style src="../assets/sass/components/PageContainer.scss" lang="scss"/>

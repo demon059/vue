@@ -1,13 +1,14 @@
 <template>
-    <div id="app">
+    <main id="app">
         <page-header />
         <page-content />
-    </div>
+    </main>
 </template>
 
 <script>
     import PageHeader from './components/PageHeader.vue'
     import PageContent from './components/PageContainer.vue'
+    import '@/assets/sass/app.scss'
 
     export default {
         name: 'app',
@@ -17,5 +18,3 @@
         }
     }
 </script>
-
-<style src="../src/assets/sass/app.scss" lang="scss"/>

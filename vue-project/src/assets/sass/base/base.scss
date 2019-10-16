@@ -1,30 +1,54 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  color: $base;
-  text-decoration: none;
+    color: $base;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3668b3;
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  @extend html;
-  background: $body-bg;
-  padding: 0;
-  margin: 0;
-  color: $base;
-  height: 100%;
-  font-size: 16px;
-  font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
+    @extend html;
+    background: $body-bg;
+    padding: 0;
+    margin: 0;
+    color: $base;
+    height: 100%;
+    font-size: 16px;
+    font-family: Roboto, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
