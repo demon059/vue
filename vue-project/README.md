@@ -1,34 +1,19 @@
-# vue-project
+# Issues-list
+https://demon059.github.io/
 
-## Project setup
-```
-npm install
-```
+Приложение отображает список открытых задач из репозитория https://github.com/vuejs/vue/issues. <br>
+Получение списка реализовано через RESTful API.<br>
+Приложение отображается на мобильных устройств так же хорошо, как и на всех современных настольных браузерах. <br>
+Учтено UX и UI особенности.<br>
+Реалезована пагинация и сортировка списка.<br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. Использована версия Vue-CLi 3
+2. Состояние приложения реализовано на Vuex
+3. Используемые зависимости:
+    - eslint
+    - eslint-plugin-vue
+    - prettier
+    - axios
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
